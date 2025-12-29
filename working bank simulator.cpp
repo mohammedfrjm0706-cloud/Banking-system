@@ -318,10 +318,10 @@ void transfer_amount()
 					cout<<"Transfer account found! "<<endl; 
 					cout<<"Transfer account details "<<endl; 
 					split_name(j);
-					cout<<"Account first name: "<<storage[i].names.full_name<<endl; 
-					cout<<"Account father name: "<<storage[i].names.father_name<<endl; 
-					cout<<"Account grandfather name: "<<storage[i].names.grandfather_name<<endl; 
-					cout<<"Account family name: "<<storage[i].names.family_name<<endl; 
+					cout<<"Account first name: "<<storage[j].names.first_name<<endl; 
+					cout<<"Account father name: "<<storage[j].names.father_name<<endl; 
+					cout<<"Account grandfather name: "<<storage[j].names.grandfather_name<<endl; 
+					cout<<"Account family name: "<<storage[j].names.family_name<<endl; 
 					cout<<"Enter the amount transfer: "; 
 					cin>>amount;
 					if(amount<=0)
@@ -350,3 +350,4 @@ void split_name(int i)
 	stringstream split(storage[i].names.full_name); 
 	split>>storage[i].names.first_name>>storage[i].names.father_name>>storage[i].names.grandfather_name>>storage[i].names.family_name;
 }
+
