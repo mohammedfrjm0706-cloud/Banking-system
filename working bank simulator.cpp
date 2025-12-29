@@ -270,6 +270,7 @@ void delete_account()
 				}
 				count--;
 				cout<<"Account deleted successfully "<<endl; 
+				break;
 			}
 			else 
 			{
@@ -350,4 +351,5 @@ void split_name(int i)
 	stringstream split(storage[i].names.full_name); 
 	split>>storage[i].names.first_name>>storage[i].names.father_name>>storage[i].names.grandfather_name>>storage[i].names.family_name;
 }
+
 
